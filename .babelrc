@@ -1,15 +1,20 @@
 {
-  "presets": [
-    ["@babel/preset-env", {
-      "debug": true,
-      "targets": {
-        "chrome": "60"
-      }
-    }],
-    "@babel/preset-react"
-  ],
-  "plugins": [
-    ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": true }],
-    "@babel/plugin-proposal-class-properties"
-  ]
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "debug": true,
+                "targets": {
+                    "chrome": "60",
+                    "firefox": "60",
+                    "ie": "11"
+                }
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": true }],
+        "@babel/plugin-proposal-class-properties"
+    ]
 }
